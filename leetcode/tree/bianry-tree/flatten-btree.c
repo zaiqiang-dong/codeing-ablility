@@ -23,12 +23,14 @@ void flatten(struct TreeNode *root){
 		return;
 	}
 
+	/* last */
 	flatten(root->left);
 	flatten(root->right);
 
 	struct TreeNode *left = root->left;
 	struct TreeNode *right = root->right;
 
+	/* 设置root left 为 null */
 	root->left = NULL;
 	root->right = left;
 

@@ -28,6 +28,7 @@ void connectTwoNode(struct Node *node1, struct Node *node2)
 
 	connectTwoNode(node1->left, node1->right);
 	connectTwoNode(node2->left, node2->right);
+	/* 关键节点 */
 	connectTwoNode(node1->right, node2->left);
 }
 
