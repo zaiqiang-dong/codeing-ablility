@@ -6,6 +6,7 @@ struct TreeNode {
 	struct TreeNode *right;
 }
 
+/* 前序 */
 int check(struct TreeNode *root, struct TreeNode *min, struct TreeNode *max)
 {
 	int rl = 0;
