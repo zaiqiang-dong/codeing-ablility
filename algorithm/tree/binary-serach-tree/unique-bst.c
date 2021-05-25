@@ -14,11 +14,7 @@
  * };
  */
 
- struct TreeNode {
-     int val;
-     struct TreeNode *left;
-     struct TreeNode *right;
- };
+#include "../datastruct/binary-tree.h"
 
 /**
  * Note: The returned array must be malloced, assume caller calls free().

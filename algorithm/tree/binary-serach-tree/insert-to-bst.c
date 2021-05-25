@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "binary-serach-tree.h"
+#include "../datastruct/binary-tree.h"
 
 
 struct TreeNode * insert_to_bst(struct TreeNode *root, int target){

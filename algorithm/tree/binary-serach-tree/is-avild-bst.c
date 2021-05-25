@@ -1,10 +1,6 @@
 #include <stdio.h>
+#include "../datastruct/binary-tree.h"
 
-struct TreeNode {
-	int val;
-	struct TreeNode *left;
-	struct TreeNode *right;
-}
 
 /* 前序 */
 int check(struct TreeNode *root, struct TreeNode *min, struct TreeNode *max)

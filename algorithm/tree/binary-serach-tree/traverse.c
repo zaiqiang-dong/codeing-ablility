@@ -2,11 +2,7 @@
 
 #include <stdio.h>
 
-struct TreeNode {
-	int val;
-	struct TreeNode *left;
-	struct TreeNode *right;
-}
+#include "../datastruct/binary-tree.h"
 
 void traverse(struct TreeNode *root)
 {

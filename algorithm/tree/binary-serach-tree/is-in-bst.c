@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "binary-serach-tree.h"
+#include "../datastruct/binary-tree.h"
 
 
 int is_in_bst(struct TreeNode *root, int target){

@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "binary-serach-tree.h"
+#include "../datastruct/binary-tree.h"
 
 static int max_sum = 0;
 
