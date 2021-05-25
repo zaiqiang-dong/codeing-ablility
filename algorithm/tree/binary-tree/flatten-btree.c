@@ -12,11 +12,7 @@
  * };
  */
 
- struct TreeNode {
-     int val;
-     struct TreeNode *left;
-     struct TreeNode *right;
- };
+#include "binary-tree.h"
 
 void flatten(struct TreeNode *root){
 	if (root == NULL) {

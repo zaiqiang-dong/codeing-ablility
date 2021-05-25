@@ -9,12 +9,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "binary-tree.h"
 
- struct TreeNode {
-     int val;
-     struct TreeNode *left;
-     struct TreeNode *right;
- };
 
 struct TreeNode* constructMaximumBinaryTree(int* nums, int numsSize){
 	int i = 0;

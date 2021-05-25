@@ -1,11 +1,6 @@
 /* 把一个二叉树进行镜像翻转 */
 
-struct TreeNode{
-	int val;
-	struct TreeNode *left;
-	struct TreeNode *right;
-}
-
+#include "binary-tree.h"
 
 struct TreeNode * invertTree(struct TreeNode *root)
 {

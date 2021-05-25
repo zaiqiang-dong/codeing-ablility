@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../datastruct/binary-tree.h"
+#include "binary-tree.h"
 
 #define ARRAY_SIZE 100
 

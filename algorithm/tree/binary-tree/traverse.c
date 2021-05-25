@@ -2,7 +2,7 @@
 /* traverse  model */
 
 #include <stdio.h>
-#include "../datastruct/binary-tree.h"
+#include "binary-tree.h"
 
 void pre_order_traverse(struct TreeNode *root)
 {
