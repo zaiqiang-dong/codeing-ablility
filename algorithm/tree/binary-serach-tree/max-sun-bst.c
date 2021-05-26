@@ -11,17 +11,17 @@
 
 static int max_sum = 0;
 
-static int find_max(struct TreeNode *root);
-static int find_min(struct TreeNode *root);
-static int find_sum(struct TreeNode *root);
-static int is_bst(struct TreeNode *root);
+static int find_max(struct tree_node *root);
+static int find_min(struct tree_node *root);
+static int find_sum(struct tree_node *root);
+static int is_bst(struct tree_node *root);
 
 #define MAX_INT ((unsigned int)(-1 >> 1))
 #define MIN_INT (~MAX_INT)
 
 /* 主函数 */
 
-int max_sum_bst(struct TreeNode *root)
+int max_sum_bst(struct tree_node *root)
 {
 	traverse(root);
 	return max_sum;
@@ -30,7 +30,7 @@ int max_sum_bst(struct TreeNode *root)
 
 
 /* 方法一:前序 */
-void traverse(struct TreeNode *root)
+void traverse(struct tree_node *root)
 {
 	int left_max,right_min;
 	int left_sum,right_sum;
@@ -75,7 +75,7 @@ next:
  * res[3] 记录以 root 为根的二叉树所有节点值之和。
  *
  */
-int * traverse(struct TreeNode *root)
+int * traverse(struct tree_node *root)
 {
 	int *res;
 	int *left,*right;

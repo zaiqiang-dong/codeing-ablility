@@ -5,16 +5,16 @@
 
 /**
  * Definition for a binary tree node.
- * struct TreeNode {
+ * struct tree_node {
  *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
+ *     struct tree_node *left;
+ *     struct tree_node *right;
  * };
  */
 
 #include "binary-tree.h"
 
-void flatten(struct TreeNode *root){
+void flatten(struct tree_node *root){
 	if (root == NULL) {
 		return;
 	}
@@ -23,14 +23,14 @@ void flatten(struct TreeNode *root){
 	flatten(root->left);
 	flatten(root->right);
 
-	struct TreeNode *left = root->left;
-	struct TreeNode *right = root->right;
+	struct tree_node *left = root->left;
+	struct tree_node *right = root->right;
 
 	/* 设置root left 为 null */
 	root->left = NULL;
 	root->right = left;
 
-	struct TreeNode *p = root;
+	struct tree_node *p = root;
 	while (p->right != NULL) {
 		p = p->right;
 	}

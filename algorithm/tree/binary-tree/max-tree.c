@@ -1,9 +1,9 @@
 /**
  * Definition for a binary tree node.
- * struct TreeNode {
+ * struct tree_node {
  *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
+ *     struct tree_node *left;
+ *     struct tree_node *right;
  * };
  */
 
@@ -12,7 +12,7 @@
 #include "binary-tree.h"
 
 
-struct TreeNode* constructMaximumBinaryTree(int* nums, int numsSize){
+struct tree_node* constructMaximumBinaryTree(int* nums, int numsSize){
 	int i = 0;
 	int idx = 0;
 	int max_val = 0;
@@ -28,7 +28,7 @@ struct TreeNode* constructMaximumBinaryTree(int* nums, int numsSize){
 		}
 	}
 
-	struct TreeNode *root = (struct TreeNode *)malloc(sizeof(struct TreeNode));
+	struct tree_node *root = (struct tree_node *)malloc(sizeof(struct tree_node));
 	root->val = max_val;
 	root->left = constructMaximumBinaryTree(nums, idx);
 	root->right = constructMaximumBinaryTree(nums+index+1, numsSize - idx -1);

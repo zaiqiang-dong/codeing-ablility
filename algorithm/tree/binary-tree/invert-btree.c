@@ -2,11 +2,11 @@
 
 #include "binary-tree.h"
 
-struct TreeNode * invertTree(struct TreeNode *root)
+struct tree_node * invertTree(struct tree_node *root)
 {
 	/* 前序的位置进行交换 */
 
-	struct TreeNode *tmp = root->left;
+	struct tree_node *tmp = root->left;
 	root->left = root->right;
 	root->right = tmp;
 

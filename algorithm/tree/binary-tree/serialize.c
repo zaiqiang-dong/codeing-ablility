@@ -8,7 +8,7 @@
 static int sbuff[ARRAY_SIZE] = {'\0'};
 static int *buff;
 
-void serialize(struct TreeNode *root)
+void serialize(struct tree_node *root)
 {
 	if (root == NULL) {
 		*buff = '#';
@@ -22,9 +22,9 @@ void serialize(struct TreeNode *root)
 	serialize(root->right);
 }
 
-struct TreeNode * reserialize()
+struct tree_node * reserialize()
 {
-	struct TreeNode *root = NULL;
+	struct tree_node *root = NULL;
 	if (*buff == '\0') {
 		return NULL;
 	}
@@ -34,7 +34,7 @@ struct TreeNode * reserialize()
 		return NULL;
 	}
 
-	root = (struct TreeNode *)malloc(sizeof(struct TreeNode));
+	root = (struct tree_node *)malloc(sizeof(struct tree_node));
 	root->val = *buff;
 	buff++;
 	root->left = reserialize(buff);
@@ -47,7 +47,7 @@ struct TreeNode * reserialize()
 int main(int argc, char *argv[])
 {
 
-	struct TreeNode *root = NULL;
+	struct tree_node *root = NULL;
 	sbuff[0] = 1;
 	sbuff[1] = 2;
 	sbuff[2] = '#';

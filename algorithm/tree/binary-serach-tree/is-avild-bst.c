@@ -3,7 +3,7 @@
 
 
 /* 前序 */
-int check(struct TreeNode *root, struct TreeNode *min, struct TreeNode *max)
+int check(struct tree_node *root, struct tree_node *min, struct tree_node *max)
 {
 	int rl = 0;
 	int rr = 0;
@@ -28,7 +28,7 @@ int check(struct TreeNode *root, struct TreeNode *min, struct TreeNode *max)
 	}
 }
 
-int is_avild_bst(struct TreeNode *root)
+int is_avild_bst(struct tree_node *root)
 {
 	return check(roo, NULL, NULL);
 }

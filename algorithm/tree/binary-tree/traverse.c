@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include "binary-tree.h"
 
-void pre_order_traverse(struct TreeNode *root)
+void pre_order_traverse(struct tree_node *root)
 {
 	/* 前序遍历 */
 	if (root == NULL) {
@@ -15,7 +15,7 @@ void pre_order_traverse(struct TreeNode *root)
 	pre_order_traverse(root->right);
 }
 
-void in_order_traverse(struct TreeNode *root)
+void in_order_traverse(struct tree_node *root)
 {
 	if (root == NULL) {
 		return;
@@ -26,7 +26,7 @@ void in_order_traverse(struct TreeNode *root)
 	in_order_traverse(root->right);
 }
 
-void post_order_traverse(struct TreeNode *root)
+void post_order_traverse(struct tree_node *root)
 {
 	if (root == NULL) {
 		return;

@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include "../datastruct/binary-tree.h"
 
-struct TreeNode * get_min(struct TreeNode *root) {
+struct tree_node * get_min(struct tree_node *root) {
 	while (root->left) {
 		root = root->left;
 	}
 	return root;
 }
 
-struct TreeNode * delete_from_bst(struct TreeNode *root, int target){
+struct tree_node * delete_from_bst(struct tree_node *root, int target){
 	if (root == NULL) {
 		return NULL;
 	}
@@ -23,7 +23,7 @@ struct TreeNode * delete_from_bst(struct TreeNode *root, int target){
 		}
 
 		/* 处理左右子树都不为空情况 */
-		struct TreeNode *min = get_min(root->right);
+		struct tree_node *min = get_min(root->right);
 		root->val = min->val;
 		/* 继续删除找到的min */
 		root->right = delete_from_bst(root->right, min->val);

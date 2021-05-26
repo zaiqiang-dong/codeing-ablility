@@ -7,10 +7,10 @@
 
 /**
  * Definition for a binary tree node.
- * struct TreeNode {
+ * struct tree_node {
  *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
+ *     struct tree_node *left;
+ *     struct tree_node *right;
  * };
  */
 
@@ -19,6 +19,6 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-struct TreeNode** generateTrees(int n, int* returnSize){
+struct tree_node** generateTrees(int n, int* returnSize){
 
 }

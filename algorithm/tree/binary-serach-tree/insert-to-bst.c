@@ -4,9 +4,9 @@
 #include "../datastruct/binary-tree.h"
 
 
-struct TreeNode * insert_to_bst(struct TreeNode *root, int target){
+struct tree_node * insert_to_bst(struct tree_node *root, int target){
 	if (root == NULL) {
-		return (struct TreeNode *)malloc(sizeof(struct TreeNode));
+		return (struct tree_node *)malloc(sizeof(struct tree_node));
 	}
 
 	if (root->val < target) {

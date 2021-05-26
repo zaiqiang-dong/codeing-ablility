@@ -2,7 +2,7 @@
 #include "../datastruct/binary-tree.h"
 
 
-int is_in_bst(struct TreeNode *root, int target){
+int is_in_bst(struct tree_node *root, int target){
 	if (root == NULL) {
 		return 0;
 	}

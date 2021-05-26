@@ -4,7 +4,7 @@
 
 #include "../datastruct/binary-tree.h"
 
-void traverse(struct TreeNode *root)
+void traverse(struct tree_node *root)
 {
 	if (root == NULL) {
 		return;

@@ -2,7 +2,7 @@
 /* traverse  model */
 
 
-void traverse(struct TreeNode *root)
+void traverse(struct tree_node *root)
 {
 	/* 前序遍历 */
 	traverse(root.left);
