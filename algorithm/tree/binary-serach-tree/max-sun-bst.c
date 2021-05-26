@@ -7,14 +7,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../datastruct/binary-tree.h"
+#include "binary-tree.h"
+#include "binary-serach-tree.h"
 
 static int max_sum = 0;
-
-static int find_max(struct tree_node *root);
-static int find_min(struct tree_node *root);
-static int find_sum(struct tree_node *root);
-static int is_bst(struct tree_node *root);
 
 #define MAX_INT ((unsigned int)(-1 >> 1))
 #define MIN_INT (~MAX_INT)
@@ -40,7 +36,7 @@ void traverse(struct tree_node *root)
 		return;
 	}
 
-	if ( !is_bst(root->left) || !is_bst(root->right)) {
+	if ( !is_avild_bst(root->left) || !is_avild_bst(root->right)) {
 		goto next;
 	}
 

@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "../datastruct/binary-tree.h"
+#include "binary-tree.h"
+#include "binary-serach-tree.h"
 
 
 /* 前序 */

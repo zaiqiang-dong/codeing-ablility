@@ -6,7 +6,8 @@
 
 int memo[3][3];
 
-int count(int lo, int hi){
+int count(int lo, int hi)
+{
 	int i, ret;
 	int left,right;
 	if (lo > hi) {
@@ -27,7 +28,8 @@ int count(int lo, int hi){
 
 }
 
-int num_trees(int n){
+int num_trees(int n)
+{
 	count(1, n);
 }
 

@@ -2,14 +2,16 @@
 #include "binary-tree.h"
 #include "binary-serach-tree.h"
 
-struct tree_node * get_min(struct tree_node *root) {
+struct tree_node * get_min(struct tree_node *root)
+{
 	while (root->left) {
 		root = root->left;
 	}
 	return root;
 }
 
-struct tree_node * delete_from_bst(struct tree_node *root, int target){
+struct tree_node * delete_from_bst(struct tree_node *root, int target)
+{
 	if (root == NULL) {
 		return NULL;
 	}

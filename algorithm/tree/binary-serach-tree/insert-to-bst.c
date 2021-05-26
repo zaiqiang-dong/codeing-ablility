@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../datastruct/binary-tree.h"
+#include "binary-tree.h"
+#include "binary-serach-tree.h"
 
-
-struct tree_node * insert_to_bst(struct tree_node *root, int target){
+struct tree_node * insert_to_bst(struct tree_node *root, int target)
+{
 	if (root == NULL) {
 		return (struct tree_node *)malloc(sizeof(struct tree_node));
 	}
