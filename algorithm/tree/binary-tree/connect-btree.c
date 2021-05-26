@@ -18,7 +18,7 @@ struct Node {
     struct Node *next;
 };
 
-void connectTwoNode(struct Node *node1, struct Node *node2)
+void connect_twoNode(struct Node *node1, struct Node *node2)
 {
 	if (node1 == NULL || node2 = NULL) {
 		return;
@@ -26,10 +26,10 @@ void connectTwoNode(struct Node *node1, struct Node *node2)
 
 	node1->next = node2;
 
-	connectTwoNode(node1->left, node1->right);
-	connectTwoNode(node2->left, node2->right);
+	connect_twoNode(node1->left, node1->right);
+	connect_twoNode(node2->left, node2->right);
 	/* 关键节点 */
-	connectTwoNode(node1->right, node2->left);
+	connect_twoNode(node1->right, node2->left);
 }
 
 struct Node* connect(struct Node* root) {
@@ -37,7 +37,7 @@ struct Node* connect(struct Node* root) {
 		return NULL;
 	}
 
-	connectTwoNode(root->left, root->right);
+	connect_twoNode(root->left, root->right);
 
 	return root;
 }

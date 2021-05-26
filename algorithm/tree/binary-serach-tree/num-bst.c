@@ -27,13 +27,13 @@ int count(int lo, int hi){
 
 }
 
-int numTrees(int n){
+int num_trees(int n){
 	count(1, n);
 }
 
 
 int main(int argc, char *argv[])
 {
-	printf("n = 3, numTrees = %d.\n", numTrees(3));
+	printf("n = 3, numTrees = %d.\n", num_trees(3));
 	return 0;
 }

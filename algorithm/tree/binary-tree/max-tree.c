@@ -12,7 +12,8 @@
 #include "binary-tree.h"
 
 
-struct tree_node* constructMaximumBinaryTree(int* nums, int numsSize){
+struct tree_node* construct_maximum_binarytree(int* nums, int numsSize)
+{
 	int i = 0;
 	int idx = 0;
 	int max_val = 0;
@@ -30,8 +31,8 @@ struct tree_node* constructMaximumBinaryTree(int* nums, int numsSize){
 
 	struct tree_node *root = (struct tree_node *)malloc(sizeof(struct tree_node));
 	root->val = max_val;
-	root->left = constructMaximumBinaryTree(nums, idx);
-	root->right = constructMaximumBinaryTree(nums+index+1, numsSize - idx -1);
+	root->left = construct_maximum_binarytree(nums, idx);
+	root->right = construct_maximum_binarytree(nums+index+1, numsSize - idx -1);
 
 }
 
