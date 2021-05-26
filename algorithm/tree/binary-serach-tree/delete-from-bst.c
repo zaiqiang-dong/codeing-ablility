@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "../datastruct/binary-tree.h"
+#include "binary-tree.h"
+#include "binary-serach-tree.h"
 
 struct tree_node * get_min(struct tree_node *root) {
 	while (root->left) {
