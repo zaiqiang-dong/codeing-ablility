@@ -12,6 +12,10 @@
 
 static int max_sum = 0;
 
+static int find_max(struct tree_node *root);
+static int find_min(struct tree_node *root);
+static int find_sum(struct tree_node *root);
+
 #define MAX_INT ((unsigned int)(-1 >> 1))
 #define MIN_INT (~MAX_INT)
 
