@@ -1,24 +1,11 @@
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-
- struct ListNode {
-     int val;
-     struct ListNode *next;
- };
-
+#include "../../../include/link/single-link.h"
 // 递代反转整个链表
 
-struct ListNode * reverse(struct ListNode *head)
+struct single_link_node * reverse(struct single_link_node *head)
 {
-	struct ListNode *pre;
-	struct ListNode *cur;
-	struct ListNode *nxt;
+	struct single_link_node *pre;
+	struct single_link_node *cur;
+	struct single_link_node *nxt;
 
 	pre = NULL;
 	cur = head;
@@ -40,11 +27,11 @@ struct ListNode * reverse(struct ListNode *head)
 
 /* 迭代反转从head 到 n */
 
-struct ListNode * reverse_n(struct ListNode *head, struct ListNode *n)
+struct single_link_node * reverse_n(struct single_link_node *head, struct single_link_node *n)
 {
-	struct ListNode *pre;
-	struct ListNode *cur;
-	struct ListNode *nxt;
+	struct single_link_node *pre;
+	struct single_link_node *cur;
+	struct single_link_node *nxt;
 	pre = NULL;
 	cur = head;
 	nxt = head;
@@ -64,10 +51,10 @@ struct ListNode * reverse_n(struct ListNode *head, struct ListNode *n)
 
 /* 迭代反转，以k个为一级 */
 
-struct ListNode * reverse_kgroup(struct ListNode *head, int k)
+struct single_link_node * reverse_kgroup(struct single_link_node *head, int k)
 {
-	struct ListNode *a;
-	struct ListNode *b;
+	struct single_link_node *a;
+	struct single_link_node *b;
 	int i;
 
 	if (head == NULL) {
@@ -84,7 +71,7 @@ struct ListNode * reverse_kgroup(struct ListNode *head, int k)
 	}
 
 	/* 反转部分 */
-	struct ListNode *new_head = reverse_n(a, b);
+	struct single_link_node *new_head = reverse_n(a, b);
 	/* 递归反转 */
 	a->next = reverse_kgroup(b, k);
 	return new_head;

@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "binary-tree.h"
-#include "binary-serach-tree.h"
+#include "../../include/tree/binary-tree.h"
+#include "../../include/tree/binary-serach-tree.h"
 
 struct tree_node * get_min(struct tree_node *root)
 {

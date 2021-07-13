@@ -14,7 +14,7 @@
  * };
  */
 
-#include "../datastruct/binary-tree.h"
+#include "../datastruct/../../include/tree/binary-tree.h"
 
 /**
  * Note: The returned array must be malloced, assume caller calls free().
